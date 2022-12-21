@@ -1,4 +1,4 @@
-import { addAction } from '../redux/action'; 
+import { addAction, removeFromCart } from '../redux/action'; 
 import { useDispatch } from 'react-redux';
 
 
@@ -11,7 +11,10 @@ function Main() {
   }
   return (
     <div>
-        <button onClick={()=>dispatch(addAction(product))}>Add to card</button>
+        <button onClick={()=>dispatch(addAction(product))}>Add to card</button> 
+    <div>
+        <button onClick={()=>dispatch(removeFromCart(product.name))}>Remove From card</button> 
+    </div>
     </div>
   );
 }

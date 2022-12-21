@@ -1,20 +1,19 @@
-// import { ADDD_TO_CART } from "./constant";
+
 export const cartData = (data = [], action) => {
   console.log("reducer called",action);
-//   return "abc"
-// if (action.type === ADDD_TO_CART) {
-//     console.warn("reducer called", action);
-//     return action.data;
-//   } else {
-//     return "no action matched";
-//   }
+
 
   switch(action.type){
-      case "ADD_TO_CARD":
+      case "ADD_TO_CART":
           return [
               action.data,
               ...data
           ];
+      case "REMOVE_TO_CART":
+        data.length = data.length-1;
+            return [
+                ...data
+            ];
             default: return data;
   }
 };
