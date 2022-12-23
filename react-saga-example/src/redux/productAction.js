@@ -1,10 +1,13 @@
-export const productList=async()=>{
-    let data= await fetch("https://gorest.co.in/public/v2/users");
-    data = data.json();
-    console.log("product List called",data);
-
+export const productList=()=>{
     return {
         type:"PRODUCT_LIST",
-        data
+        data:"mdcks"
     };
 } 
+// export const setProductList=(data)=>{
+//     console.warn("set action");
+//     return {
+//         type:"SET_PRODUCT_LIST",
+//         data
+//     };
+// } 

@@ -1,4 +1,4 @@
-export const addAction = (data) => {
+export const addToCart = (data) => {
   console.log("action called", data);
   return {
     type: "ADD_TO_CART",
@@ -19,5 +19,3 @@ export const emptyCart = (data) => {
     type: "EMPTY_CART",
   };
 };
-
-console.log("⁄€‹›ﬁﬂ‡°·‚—±’”∏∏∏Ò¨Áˇ‰´„Œ/* ÍÎ˝ */ÔÒ¯ÚÆ¿˘¯˘¯Â˜ı◊Ç˛¸»`⁄€⁄€⁄");

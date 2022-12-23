@@ -11,7 +11,7 @@ const sagaMiddleware =createSagaMiddleware();
 // const store= createStore(rootReducer);
 const store= configureStore({
     reducer:rootReducer,
-    middleware: ()=>sagaMiddleware
+    middleware: ()=>[sagaMiddleware]
 });
 
 sagaMiddleware.run(productSaga);

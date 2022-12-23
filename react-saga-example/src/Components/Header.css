@@ -21,3 +21,18 @@
     color: #fff;
   }
   
+
+
+  /* produc-container */
+.product-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.product-item{
+  margin: 10px;
+    border-radius: 15px;
+    background-color: #cee1f2;
+}
