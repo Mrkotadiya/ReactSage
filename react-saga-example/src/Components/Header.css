@@ -21,6 +21,13 @@
     color: #fff;
   }
   
+.logo{
+
+  float: left;
+  margin: 0;
+  padding: 20px;
+
+}
 
 
   /* produc-container */
